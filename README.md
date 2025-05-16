@@ -21,7 +21,4 @@ Proposer des recommandations de postes similaires à une offre d'emploi ou à un
 
 ## 🚀 Comment exécuter le projet
 
-1. **Cloner le dépôt** (ou importer les fichiers):
-   ```bash
-   git clone https://github.com/votre-utilisateur/job-recommendation.git
-   cd job-recommendation
+
