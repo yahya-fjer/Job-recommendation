@@ -19,6 +19,6 @@ Proposer des recommandations de postes similaires à une offre d'emploi ou à un
 - Calcul de similarité cosinus entre titres de postes.
 - Recommandation de postes similaires à partir d’un titre saisi.
 
-## 🚀 Comment exécuter le projet
+
 
 
