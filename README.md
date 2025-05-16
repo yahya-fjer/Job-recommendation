@@ -1,24 +1,27 @@
-# 🔍 Job Recommendation System using PySpark
+# Job Recommendation System
 
-Ce projet propose un système de recommandation d’emploi basé sur les compétences extraites des descriptions d'offres et des profils candidats, en utilisant PySpark pour le traitement de données à grande échelle.
+Ce projet vise à développer un système de recommandation d'emplois basé sur le traitement du langage naturel (NLP) et des techniques de similarité sémantique.
 
-## 📁 Fichiers attendus
+## 📌 Objectif
 
-- `linkedin_job_postings.csv` : Fichier contenant les offres d’emploi avec leurs titres, descriptions, etc.
-- `stopwords.txt` : Liste des mots à ignorer lors du traitement des textes.
-- `test_cases.csv` : Fichier de profils de chercheurs d'emploi avec leurs compétences ou descriptions.
-- `output_job_skills_match.csv` : Fichier de sortie généré avec les correspondances entre profils et emplois.
+Proposer des recommandations de postes similaires à une offre d'emploi ou à un titre saisi par l'utilisateur, en se basant sur les descriptions disponibles dans une base de données.
 
-## ⚙️ Technologies utilisées
+## 📁 Structure du projet
 
-- Python
-- PySpark
-- NLTK (Natural Language Toolkit)
-- TF-IDF (extraction des mots-clés)
-- Spark MLlib (vectorisation et similarité)
+- `job Recommendation.ipynb` : Notebook principal contenant le code de prétraitement, vectorisation des textes (TF-IDF), et la logique de recommandation.
+- `MySQL` : Utilisation d'une base de données pour stocker les offres d'emploi.
+- `NLTK`, `sklearn`, `pandas`, `re` : Outils utilisés pour le nettoyage et la vectorisation du texte.
 
-## 🚀 Exécution du projet
+## ⚙️ Fonctionnalités
 
-1. **Installer les dépendances** :
+- Nettoyage des titres de postes (suppression des villes, stopwords, etc.)
+- Extraction des titres depuis une base de données MySQL.
+- Calcul de similarité cosinus entre titres de postes.
+- Recommandation de postes similaires à partir d’un titre saisi.
+
+## 🚀 Comment exécuter le projet
+
+1. **Cloner le dépôt** (ou importer les fichiers):
    ```bash
-   pip install pyspark nltk
+   git clone https://github.com/votre-utilisateur/job-recommendation.git
+   cd job-recommendation
